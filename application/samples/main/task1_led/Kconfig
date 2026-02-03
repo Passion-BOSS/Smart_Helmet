@@ -1,0 +1,9 @@
+
+config ENABLE_TASK1_LED_SAMPLE
+    bool
+    prompt "Enable the Sample of Task1 LED."
+    default n
+    depends on SAMPLE_ENABLE
+    help
+        This option means enable the sample of Task1 LED.
+    

@@ -1,0 +1,40 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2023-2023. All rights reserved.
+#===============================================================================
+
+config SAMPLE_LOGIC_GASSENSOR
+    bool"Support logic gassensor."
+    depends on ENABLE_LOGIC_SAMPLE
+    help
+        This option means support logic gassensor.
+
+if SAMPLE_LOGIC_GASSENSOR
+menu "Gassensor Configuration"
+    osource "application/samples/logic/gassensor/Kconfig"
+endmenu
+endif
+
+config SAMPLE_LOGIC_FLASHLIGHT
+    bool "Support logic flashlight."
+    depends on ENABLE_LOGIC_SAMPLE
+    help
+        This option means support logic flashlight.
+
+if SAMPLE_LOGIC_FLASHLIGHT
+menu "Flashlight Configuration"
+    osource "application/samples/logic/flashlight/Kconfig"
+endmenu
+endif
+config SAMPLE_LOGIC_HALLSENSOR
+   bool "Support logic hallsensor."
+    depends on ENABLE_LOGIC_SAMPLE
+    help
+        This option means support logic hallsensor.
+
+if SAMPLE_LOGIC_HALLSENSOR
+menu "Hallsensor Configuration"
+    osource "application/samples/logic/hallsensor/Kconfig"
+endmenu
+endif
+  

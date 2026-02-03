@@ -1,0 +1,7 @@
+config HALL_SENSOR_PIN
+    int "hall sensor pin"
+    default 5
+    help
+      This is the pin number of the hall sensor.
+
+

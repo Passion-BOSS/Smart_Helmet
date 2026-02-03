@@ -1,0 +1,8 @@
+
+config ENABLE_GASSENSOR_LOGIC
+    prompt "Enable the Gas Sensor Logic."
+    bool
+    default n
+    help
+        This option enables the Gas Sensor Logic.        
+

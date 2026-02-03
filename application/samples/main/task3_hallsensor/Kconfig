@@ -1,0 +1,9 @@
+
+config ENABLE_TASK3_HALSENSOR_SAMPLE
+    bool
+    prompt "Enable the Sample of Task3 Hal Sensor."
+    default n
+    depends on SAMPLE_ENABLE
+    help
+        This option means enable the sample of Task3 Hall Sensor.
+    

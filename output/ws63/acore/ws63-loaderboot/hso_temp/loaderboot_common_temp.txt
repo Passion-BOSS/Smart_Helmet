@@ -1,0 +1,1 @@
+####D:/h3863/3sdk_withoutgit/src/bootloader/provision_ws63/startup/main.c,D:/h3863/3sdk_withoutgit/src/bootloader/provision_ws63/startup/riscv_init.S,D:/h3863/3sdk_withoutgit/src/bootloader/provision_ws63/../commonboot/src/boot_uart_auth.c,D:/h3863/3sdk_withoutgit/src/bootloader/provision_ws63/../commonboot/src/boot_erase.c

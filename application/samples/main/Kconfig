@@ -1,0 +1,40 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2023-2023. All rights reserved.
+#===============================================================================
+config SAMPLE_MAIN_TASK1_LED
+   bool"Suppose sample main task1 led."
+    depends on ENABLE_MAIN_SAMPLE
+    help
+        This option means support sample main task1 led.
+
+if SAMPLE_MAIN_TASK1_LED
+menu "Task1 LED Configuration"
+    osource "application/samples/main/task1_led/Kconfig"
+    endmenu
+endif
+
+config SAMPLE_MAIN_TASK2_GASSENSOR
+   bool"Support sample main task2 gassensor."
+    depends on ENABLE_MAIN_SAMPLE
+    help
+        This option means support sample main task2 gassensor.
+
+if SAMPLE_MAIN_TASK2_GASSENSOR
+menu "Task2 Gassensor Configuration"
+    osource "application/samples/main/task2_gassensor/Kconfig"
+    endmenu
+endif
+
+config SAMPLE_MAIN_TASK3_HALLSENSOR
+   bool"Support sample main task3 hallsensor."
+    depends on ENABLE_MAIN_SAMPLE
+    help
+        This option means support sample main task3 hallsensor.
+
+if SAMPLE_MAIN_TASK3_HALLSENSOR
+menu "Task3 Hallsensor Configuration"
+    osource "application/samples/main/task3_hallsensor/Kconfig"
+    endmenu
+endif
+   

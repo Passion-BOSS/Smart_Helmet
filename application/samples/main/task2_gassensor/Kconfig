@@ -1,0 +1,9 @@
+
+config ENABLE_TASK2_GASSENSOR_SAMPLE
+    bool
+    prompt "Enable the Sample of Task2 Gas Sensor."
+    default n
+    depends on SAMPLE_ENABLE
+    help
+        This option means enable the sample of Task2 Gas Sensor.
+    

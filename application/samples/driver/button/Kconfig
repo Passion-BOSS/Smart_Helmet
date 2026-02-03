@@ -1,0 +1,16 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2024-2024. All rights reserved.
+#===============================================================================
+config ROLL_UP_PIN
+    int
+    prompt "Choose roll-up pin."
+    default 0
+config ROLL_DOWN_PIN
+    int
+    prompt "Choose roll-down pin."
+    default 1
+config PUSH_BUTTON_PIN
+    int
+    prompt "Choose push button pin."
+    default 2

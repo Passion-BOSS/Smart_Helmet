@@ -1,0 +1,34 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2024-2024. All rights reserved.
+#===============================================================================
+config UART_BUS_ID
+    int
+    prompt "Choose UART bus id."
+    depends on SAMPLE_SUPPORT_UART
+    default 1
+
+config UART1_TXD_PIN
+    int
+    prompt "Choose UART1 TXD pin."
+    depends on SAMPLE_SUPPORT_UART
+    default 17
+
+config UART1_RXD_PIN
+    int
+    prompt "Choose UART1 RXD pin."
+    depends on SAMPLE_SUPPORT_UART
+    default 18
+
+
+config UART1_SUPPORT_INT_MODE
+    bool
+    prompt "UART1 support interrupt mode."
+    depends on SAMPLE_SUPPORT_UART
+    default n
+
+config UART1_TRANSFER_SIZE
+    int
+    prompt "Config UART1 transfer size."
+    depends on SAMPLE_SUPPORT_UART
+    default 64

@@ -1,0 +1,1 @@
+####D:/h3863/3sdk_withoutgit/src/middleware/chips/ws63/update/local_update/../local_update/upg_encry_porting.c

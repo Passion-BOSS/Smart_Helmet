@@ -1,0 +1,48 @@
+#===============================================================================
+# @brief    Kconfig file.
+# Copyright (c) HiSilicon (Shanghai) Technologies Co., Ltd. 2023-2023. All rights reserved.
+#===============================================================================
+
+config DRIVER_SAMPLE_BUTTON
+
+    bool "Support BUTTON Sample Driver."
+
+    default n
+    depends on ENABLE_DRIVER_SAMPLE
+    help
+        This option means support BUTTON Sample Driver.
+
+if DRIVER_SAMPLE_BUTTON
+menu "BUTTON Sample Driver Configuration"
+    osource "application/samples/driver/button/Kconfig"
+endmenu
+endif
+
+config DRIVER_SAMPLE_LED_PWM
+
+    bool "Support LED PWM Sample Driver."
+    default n
+    depends on ENABLE_DRIVER_SAMPLE
+    help
+        This option means support LED PWM Sample Driver.
+
+if DRIVER_SAMPLE_LED_PWM
+menu "LED PWM Sample Driver Configuration"
+    osource "application/samples/driver/led_pwm/Kconfig"
+endmenu
+endif
+
+config DRIVER_SAMPLE_SERIAL1
+
+   bool "Support SERIAL1 Sample Driver."
+    default n
+    depends on ENABLE_DRIVER_SAMPLE
+    help
+        This option means support SERIAL1 Sample Driver.
+
+if DRIVER_SAMPLE_SERIAL1
+menu "SERIAL1 Sample Driver Configuration"
+    osource "application/samples/driver/serial1/Kconfig"
+endmenu
+endif
+

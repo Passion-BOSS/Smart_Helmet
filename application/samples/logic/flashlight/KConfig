@@ -1,0 +1,22 @@
+
+config FLASHLIGHT_ENABLE
+    bool "Enable flashlight functionality"
+    default y
+    help
+        Enable the flashlight feature. This includes PWM control for brightness
+        and key handling for user interaction.
+
+config FLASHLIGHT_DEFAULT_BRIGHTNESS
+    int "Default brightness level (0-100)"
+    range 0 100
+    default 50
+    help
+        Set the default brightness level when flashlight is turned on.
+
+config FLASHLIGHT_STORAGE_SUPPORT
+    bool "Enable brightness settings storage"
+    default y
+    help
+        Save and restore brightness settings using non-volatile storage.
+
+
